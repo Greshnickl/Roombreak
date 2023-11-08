@@ -103,8 +103,92 @@ iframe {
 	background-color: #F5F5F5;
 	border-radius: 15px;
 	box-shadow: 2px 2px 5px #696969;
+	display: flex;
+	align-items: center;
 }
 .contactUl a {
 	text-decoration: none;
 	color: black;
+}
+.contactUl img {
+	width: 20px;
+	height: 20px;
+	margin auto;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+#questCont {
+	text-align: center; 
+}
+.questDiv {
+	width: 500px;
+	height: 500px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    box-shadow: 1px 1px 5px #696969;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+.questDiv img {
+	width: auto;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+.questDiv p {
+	width: 480px;
+	position: absolute;
+	bottom: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Создает 3 столбца в сетке */
+    grid-gap: 10px; /* Расстояние между ячейками в сетке */
+    padding: 20px;
+}
+
+.grid-item {
+	border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    background-color: #F5F5F5;
+    box-shadow: 1px 1px 5px #696969;
+}
+
+.grid-item img {
+    width: 100%; /* Изображение будет занимать 100% ширины ячейки */
+    height: auto; /* Высота будет рассчитываться автоматически для сохранения пропорций */
+}
+.grid-item:hover {
+	transform: scale(1.25);
+	transition: 1.5s;
+}
+@media (max-width: 768px) {
+	.logo>img {
+	height: 50px;
+	margin: 10px auto 10px 20px;
+	}
+	.media {
+		width: 50%;
+	}
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Изменяем на 2 столбца на маленьких экранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Изменяем на 1 столбец на очень маленьких экранах */
+    }
+}
+.about {
+	text-indent: 20px;
+	font-size: 1.1em;
+	margin: 20px 30px 20px 30px;
+}
+.about > span {
+	color: #2B7D93;
 }
