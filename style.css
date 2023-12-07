@@ -148,6 +148,7 @@ iframe {
     grid-template-columns: repeat(3, 1fr); /* Создает 3 столбца в сетке */
     grid-gap: 10px; /* Расстояние между ячейками в сетке */
     padding: 20px;
+    z-index: 1;
 }
 
 .grid-item {
@@ -156,15 +157,18 @@ iframe {
     padding: 5px;
     background-color: #F5F5F5;
     box-shadow: 1px 1px 5px #696969;
+    z-index: 1;
 }
 
 .grid-item img {
     width: 100%; /* Изображение будет занимать 100% ширины ячейки */
     height: auto; /* Высота будет рассчитываться автоматически для сохранения пропорций */
+    z-index: 1;
 }
 .grid-item:hover {
-	transform: scale(1.25);
+	transform: scale(1.4);
 	transition: 1.5s;
+	z-index: 2;
 }
 @media (max-width: 768px) {
 	.logo>img {
